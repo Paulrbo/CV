@@ -7,6 +7,10 @@ body{
     font-size: small;
 }
 
+p{
+    margin: 2%;
+}
+
 #page{
     display: flex;
     height: 1050px;
@@ -27,6 +31,8 @@ body{
     background-color: #3f3f41;
     height: 100%;
     width: 55%;
+    display: flex;
+    flex-direction: column;
 }
 
 #pictureCenter{
@@ -52,7 +58,6 @@ body{
 
 .themeIcon{
     width: 15%;
-    height: 15%;
     margin-left: 4%;
 }
 
@@ -79,9 +84,7 @@ h3{
     align-items: center;
 }
 
-p{
-    margin: 2%;
-}
+
 
 #rectGoal{
     width: 15px;
@@ -206,4 +209,59 @@ p{
 
 #checkRight{
     padding: 0;
+}
+
+#hobbies{
+    display: flex;
+    margin-top: 2%;
+}
+
+#hobbies p{
+    margin-top: 10%;
+}
+
+.hobbieGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drawIcon{
+    width: 40%;
+}
+
+.sportIcon{
+    width: 60%;
+    margin-bottom: 7%;
+}
+
+.informaticIcon{
+    width: 35%;
+}
+
+
+
+.blueRectIcon{
+    width: 15px;
+    height: 50px;
+    background-color: #1692d1;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+#header h1{
+    margin: 0;
+}
+
+#header p{
+    width: 120%;
+}
+
+.blueThemeIcon{
+    width: 12%;
+    margin-left: 4%;
 }
