@@ -51,7 +51,7 @@ button {
 	z-index: 100;
 	visibility: hidden;
 	width: 300px;
-	height: 130%;
+	height: 150%;
 	background: #1692d1;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
