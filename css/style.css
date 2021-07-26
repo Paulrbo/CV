@@ -1,0 +1,649 @@
+*,
+*:after,
+*::before {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+@media (min-width: 800px){
+    button {
+        display: none;
+    }
+    #st-container{
+        display: none;
+    }
+    body{
+        background: center/120% no-repeat url(../wallpaper.jpg);
+    }
+}
+
+
+@media (max-width: 800px){
+
+.fa-bars{
+	color: #1692d1;
+	
+}
+
+.fa-bars:hover{
+	color: #137db3;
+}
+
+
+
+button {
+	border: none;
+	cursor: pointer;
+	background-color: #FFFFFF00;
+}
+
+
+.column{
+	display: flex;
+}
+
+
+.st-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	visibility: hidden;
+	width: 300px;
+	height: 130%;
+	background: #1692d1;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+/*changement opacité lors de l'apparition*/
+.st-menu::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	content: '';
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+.st-menu-open .st-menu::after {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+
+/*animation*/
+.st-effect-5.st-menu {
+	z-index: 1;
+	-webkit-transform: translate3d(-50%, 0, 0);
+	transform: translate3d(-50%, 0, 0);
+}
+
+.st-effect-5.st-menu-open .st-effect-5.st-menu {
+	visibility: visible;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+}
+/*************************CV************************/
+body{
+	color: white;
+	display: flex;
+	justify-content: center;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: small;
+}
+
+
+p{
+    margin: 1%;
+}
+
+#page{
+    display: flex;
+    height: 1100px;
+    width: 744px;
+    justify-content: center;
+}
+
+#left{
+    position: relative;
+    background-color: #1692d1;
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+#right{
+    position: relative;
+    background-color: #3f3f41;
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+#pictureCenter{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 18%;
+    align-items: center;
+}
+
+#picture{
+	width: 50%;
+    position: center;
+}
+
+.sexionTitle{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5%;
+}
+
+.themeIcon{
+    width: 15%;
+    margin-left: 4%;
+}
+
+.rectIcon{
+    width: 15px;
+    height: 50px;
+    background-color: #3f3f41;
+}
+
+h3{
+    margin-left: 5%;
+    font-size: medium;
+}
+
+#imgpd{
+    width: 6%;
+    height: 6%;
+    margin-left: 13%;
+    margin-right: 5%;
+}
+
+.divpd{
+    display: flex;
+    align-items: center;
+}
+
+
+
+#rectGoal{
+    width: 15px;
+    height: 18.4px;
+    background-color: #3f3f41;
+}
+
+#goal h3{
+    margin-left: 8%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+#goal p{
+    margin-left: 12%;
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+#computing p{
+    margin-left: 12%;
+}
+
+#office{
+    display: flex;
+    align-items: center;
+}
+
+#adobe{
+    display: flex;
+    align-items: center;
+}
+
+#html{
+    display: flex;
+    align-items: center;
+}
+
+.fillCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: 1%;
+}
+
+.emptyCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 1%;
+}
+
+.firstOfficeCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: 5%;
+}
+
+.firstAdobeCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: 12%;
+}
+
+.firstHtmlCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: 15%;
+}
+
+#languages p{
+    margin-left: 12%;
+}
+
+#english{
+    display: flex;
+    align-items: center;
+}
+
+#spanish{
+    display: flex;
+    align-items: center;
+}
+
+.firstEnglishCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: 20%;
+}
+
+.firstSpanishCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: 17%;
+}
+
+#orderCheck{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.divqua{
+    display: flex;
+    align-items: center;
+}
+
+#checkLeft{
+    padding: 0;
+}
+
+#checkRight{
+    padding: 0;
+}
+
+#hobbies{
+    display: flex;
+    margin-top: 2%;
+}
+
+#hobbies p{
+    margin-top: 10%;
+}
+
+.hobbieGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin-bottom: 5%;
+}
+
+.drawIcon{
+    width: 40%;
+}
+
+.sportIcon{
+    width: 60%;
+    margin-bottom: 7%;
+}
+
+.informaticIcon{
+    width: 35%;
+}
+
+
+
+.blueRectIcon{
+    width: 15px;
+    height: 50px;
+    background-color: #1692d1;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+#header h1{
+    margin: 0;
+}
+
+#header p{
+    width: 120%;
+}
+
+.blueThemeIcon{
+    width: 12%;
+    margin-left: 4%;
+}
+
+.texts{
+	margin-left: 9%;
+}
+
+h5{
+	margin-left: 1%;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/***************************RESPONSIVE*****************************************/
+
+
+@media (max-width: 800px){
+body{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: small;
+    background-color: #3f3f41;
+}
+
+p{
+    margin: 2%;
+}
+
+#page{
+    display: flex;
+    height: 1050px;
+    width: 744px;
+}
+
+#left{
+    display: none;
+}
+
+
+#right{
+    position: relative;
+    background-color: #3f3f41;
+    height: 105%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#pictureCenter{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 18%;
+    align-items: center;
+}
+
+#picture{
+    height: 90%;
+    width: 50%;
+    position: center;
+}
+
+.sexionTitle{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5%;
+}
+
+.themeIcon{
+    width: 15%;
+    margin-left: 4%;
+}
+
+.rectIcon{
+    width: 15px;
+    height: 50px;
+    background-color: #3f3f41;
+}
+
+h3{
+    margin-left: 5%;
+    font-size: medium;
+}
+
+#imgpd{
+    width: 6%;
+    height: 6%;
+    margin-left: 13%;
+    margin-right: 5%;
+}
+
+.divpd{
+    display: flex;
+    align-items: center;
+}
+
+
+
+#rectGoal{
+    width: 15px;
+    height: 18.4px;
+    background-color: #3f3f41;
+}
+
+#goal h3{
+    margin-left: 8%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+#goal p{
+    margin-left: 12%;
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+#computing p{
+    margin-left: 12%;
+}
+
+#office{
+    display: flex;
+    align-items: center;
+}
+
+#adobe{
+    display: flex;
+    align-items: center;
+}
+
+#html{
+    display: flex;
+    align-items: center;
+}
+
+.fillCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: 1%;
+}
+
+.emptyCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 1%;
+}
+
+.firstOfficeCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: 5%;
+}
+
+.firstAdobeCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: 12%;
+}
+
+.firstHtmlCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: 15%;
+}
+
+#languages p{
+    margin-left: 12%;
+}
+
+#english{
+    display: flex;
+    align-items: center;
+}
+
+#spanish{
+    display: flex;
+    align-items: center;
+}
+
+.firstEnglishCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: 20%;
+}
+
+.firstSpanishCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: 17%;
+}
+
+#orderCheck{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.divqua{
+    display: flex;
+    align-items: center;
+}
+
+#checkLeft{
+    padding: 0;
+}
+
+#checkRight{
+    padding: 0;
+}
+
+#hobbies{
+    display: flex;
+    margin-top: 2%;
+}
+
+#hobbies p{
+    margin-top: 10%;
+}
+
+.hobbieGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drawIcon{
+    width: 40%;
+}
+
+.sportIcon{
+    width: 60%;
+    margin-bottom: 7%;
+}
+
+.informaticIcon{
+    width: 35%;
+}
+
+
+
+.blueRectIcon{
+    width: 15px;
+    height: 50px;
+    background-color: #1692d1;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+#header h1{
+    margin: 0;
+}
+
+#header p{
+    width: 120%;
+}
+
+.blueThemeIcon{
+    width: 12%;
+    margin-left: 4%;
+}
+
+.texts{
+	margin-left: 9%;
+}
+}
