@@ -181,24 +181,6 @@ h3{
     align-items: center;
 }
 
-.divpd p{
-    margin: 0px;
-    padding: 0px;
-}
-
-.divpd img{
-    margin: 0px;
-    padding: 0px;
-}
-
-.divpd a{
-    margin: 0px;
-    padding: 0px;
-    color: white;
-	font-family: 'Noto Sans', sans-serif;
-	font-size: small;
-}
-
 #rectGoal{
     width: 15px;
     height: 18.4px;
